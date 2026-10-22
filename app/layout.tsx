@@ -1,7 +1,6 @@
-import type { Metadata } from "next";
+import "./globals.css";
 import { Geist, Geist_Mono } from "next/font/google";
 import { ClerkProvider } from "@clerk/nextjs";
-import "./globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,18 +12,18 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "WarRoom SaaS",
   description: "Next-Gen War Room SaaS",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <ClerkProvider publishableKey="pk_test_bGVhcm5pbmcptd2FscnZLTY1ODeUYxlcmsuYWN">
+    <ClerkProvider publishableKey="pk_test_bGVhcm55cbmctd2FscnZLTY1ODeUYxlcmsuYWN">
       <html lang="en">
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
