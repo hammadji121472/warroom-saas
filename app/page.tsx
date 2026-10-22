@@ -1,12 +1,11 @@
-"use client";
+export const dynamic = "force-dynamic";
 
 import { UserButton, SignInButton, SignUpButton, SignedIn, SignedOut } from "@clerk/nextjs";
-import { CheckCircle2, Zap, Shield, Rocket, ArrowRight } from "lucide-react";
+import { Zap, Rocket, ArrowRight } from "lucide-react";
 
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col justify-between font-sans">
-      {/* Header / Navbar */}
       <header className="border-b border-slate-800 px-6 py-4 flex justify-between items-center bg-slate-900/50 backdrop-blur">
         <div className="flex items-center gap-2">
           <Zap className="h-6 w-6 text-blue-500" />
@@ -42,7 +41,6 @@ export default function LandingPage() {
         </div>
       </header>
 
-      {/* Main Hero Section */}
       <main className="max-w-5xl mx-auto px-6 py-20 text-center flex-1 flex flex-col justify-center items-center">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-medium mb-6">
           <Rocket className="h-4 w-4" /> Next-Gen War Room SaaS
@@ -73,7 +71,6 @@ export default function LandingPage() {
         </div>
       </main>
 
-      {/* Footer */}
       <footer className="border-t border-slate-800 py-6 text-center text-slate-500 text-sm">
         © WarRoom SaaS. All rights reserved.
       </footer>
