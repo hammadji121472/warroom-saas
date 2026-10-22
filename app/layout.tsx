@@ -1,4 +1,4 @@
-import ClerkClientProvider from "@/components/ClerkClientProvider";
+import ClerkClientProvider from "./ClerkClientProvider";
 import "./globals.css";
 
 export const metadata = {
