@@ -1,4 +1,3 @@
-import ClerkClientProvider from "./ClerkClientProvider";
 import "./globals.css";
 
 export const metadata = {
@@ -13,9 +12,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        <ClerkClientProvider>{children}</ClerkClientProvider>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
