@@ -1,3 +1,5 @@
+"use client";
+
 import { UserButton, SignInButton, SignUpButton, SignedIn, SignedOut } from "@clerk/nextjs";
 import { CheckCircle2, Zap, Shield, Rocket, ArrowRight } from "lucide-react";
 
