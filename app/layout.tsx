@@ -1,4 +1,4 @@
-import { ClerkProvider } from "@clerk/nextjs";
+import ClerkClientProvider from "@/components/ClerkClientProvider";
 import "./globals.css";
 
 export const metadata = {
@@ -12,10 +12,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <ClerkProvider dynamic>
-      <html lang="en">
-        <body>{children}</body>
-      </html>
-    </ClerkProvider>
+    <html lang="en">
+      <body>
+        <ClerkClientProvider>{children}</ClerkClientProvider>
+      </body>
+    </html>
   );
 }
